@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <!-- We use a custom world for the rrbot so that the camera angle is launched correctly -->
+
+  <world name="default">
+    <include>
+      <!--<uri>model://ground_plane</uri>-->
+      <uri>model://mygroundplane</uri>
+    </include>
+
+    <!-- Global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Focus camera on tall pendulum -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>4.927360 -4.376610 3.740080 0.000000 0.275643 2.356190</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
+		<model name="stop_sign">
+      <include>
+        <uri>model://stop_sign</uri>
+        <pose>5.000000 4.000000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+		<model name="lamp_post">
+      <include>
+        <uri>model://lamp_post</uri>
+        <pose>6.000000 8.000000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+		<model name="fire_hydrant">
+      <include>
+        <uri>model://fire_hydrant</uri>
+        <pose>-1.000000 5.000000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+		<model name="brick_box_3x1x3">
+      <include>
+        <uri>model://brick_box_3x1x3</uri>
+        <pose>0.000000 -7.000000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+		<model name="ladder_60deg_0rails">
+      <include>
+        <uri>model://ladder_60deg_0rails</uri>
+        <pose>3.500000 -7.000000 0.000000 0.000000 0.000000 1.500000</pose>
+      </include>
+    </model>
+
+    <model name="wall1">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>9.000000 9.000000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+    <model name="wall2">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>9.000000 7.000000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+    <model name="wall3">
+      <include>
+        <uri>model://drc_practice_white_jersey_barrier</uri>
+        <pose>9.000000 5.000000 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+
+
+  </world>
+</sdf>
