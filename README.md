@@ -37,7 +37,7 @@ Setup the terminal.
 
 $> source devel/setup.sh
 
-Run either the ackermann vehicle with only the cammera, or with LiDAR as well. 
+Run either the ackermann vehicle with only the camera, or with LiDAR as well. 
 
 roslaunch ackermann_vehicle_gazebo ackermann_vehicle.launch
 roslaunch ackermann_vehicle_gazebo ackermann_vehicle_lidar.launch
