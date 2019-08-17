@@ -36,6 +36,11 @@ You may also need to install libignition-math2-dev to get a file used by the Vel
 ```
 sudo apt-get install libignition-math2-dev
 ```
+## Add the driving course ground plain
+Inside the "items" folder is a zip file, course_ground_plane.zip. Unzip and move the folder called course_ground_plan. (Yeah, I know, the correct word is "plain") Move this folder into your gazebo modules folder: ~/.gazebo/modules  
+
+Note: .gazebo is a hidden folder in your home directory. You can unhide hidden folder with Ctrl+h in the file browser. 
+
 
 ## Setup the terminal.
 
