@@ -2,6 +2,9 @@
 
 ROS packages for simulating a vehicle with Ackermann steering
 
+Requires Gazebo simulator to be installed: http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install
+Also, you may have to experiment with video drivers. I have good luck with Ubuntu's standard graphics frover (nouveau) on GM108M [GeForce 840M] (rev a2) for one system, and on another nvidia-384 seems to be working well on GP104 [GeForce GTX 1070]. 
+
 ## Clone the repository into the src folder (or sub folder) of your catkin workspace.
 
 ```git clone https://github.com/LTU-Actor/GazeboSimulatorModel.git```
@@ -37,7 +40,7 @@ You may also need to install libignition-math2-dev to get a file used by the Vel
 sudo apt-get install libignition-math2-dev
 ```
 ## Add the driving course ground plain
-Inside the "items" folder is a zip file, course_ground_plane.zip. Unzip and move the folder called course_ground_plan. (Yeah, I know, the correct word is "plain") Move this folder into your gazebo modules folder: ~/.gazebo/modules  
+Inside the "items" folder is a zip file, course_ground_plane.zip. Unzip and move the folder called course_ground_plan. Move this folder into your gazebo modules folder: ~/.gazebo/modules  
 
 Note: .gazebo is a hidden folder in your home directory. You can unhide hidden folder with Ctrl+h in the file browser. 
 
