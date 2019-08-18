@@ -3,7 +3,7 @@
 ROS packages for simulating a vehicle with Ackermann steering
 
 Requires Gazebo simulator to be installed: http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install
-Also, you may have to experiment with video drivers. I have good luck with Ubuntu's standard graphics frover (nouveau) on GM108M [GeForce 840M] (rev a2) for one system, and on another nvidia-384 seems to be working well on GP104 [GeForce GTX 1070]. 
+Also, you may have to experiment with video drivers. I've had good luck with Ubuntu's standard graphics driver (nouveau) on GM108M [GeForce 840M] (rev a2) for one system, and on another nvidia-384 seems to be working well on GP104 [GeForce GTX 1070]. 
 
 ## Clone the repository into the src folder (or sub folder) of your catkin workspace.
 
