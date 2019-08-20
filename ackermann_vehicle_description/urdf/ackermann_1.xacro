@@ -64,7 +64,7 @@ limitations under the License.
 
   <!-- chassis_length is measured along the x axis, chassis_width
        along the y axis, and chassis_height along the z axis. -->
-  <xacro:property name="chassis_length" value="2.0"/><!-- 0.258 -->
+  <xacro:property name="chassis_length" value="2.61"/><!-- 0.258 -->
   <xacro:property name="chassis_width" value="0.8"/><!-- 0.168 -->
   <xacro:property name="chassis_height" value="0.3"/><!-- 0.1 -->
   <xacro:property name="chassis_mass" value="2.788"/>
@@ -442,7 +442,7 @@ limitations under the License.
 	<!-- to the z in xyz. For example, to simulate a camera mounted on a 1/2 meter post, -->
 	<!-- we can replace the z value with ${wheelRadius+chassisHeight+0.5}   							--> 
   <joint name="camera_joint" type="fixed">
-    <origin xyz="${chassis_length/2} 0 ${(tire_dia/2)+chassis_height+.8}" rpy="0 1.0 0"/>
+    <origin xyz="${chassis_length/2} 0 ${(tire_dia/2)+chassis_height+.5}" rpy="0 .6 0"/>
     <parent link="chassis"/>
     <child link="camera"/>
   </joint>

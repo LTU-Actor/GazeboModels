@@ -42,12 +42,12 @@ limitations under the License.
   <arg name="paused" default="true"/>
 
   <!-- Vehicle pose -->
-  <arg name="x" default="0.0"/>
-  <arg name="y" default="0.0"/>
+  <arg name="x" default="21.0"/>
+  <arg name="y" default="-12.0"/>
   <arg name="z" default="0.3"/>
   <arg name="roll" default="0.0"/>
   <arg name="pitch" default="0.0"/>
-  <arg name="yaw" default="0.0"/>
+  <arg name="yaw" default="1.6"/>
 
   <include file="$(find ackermann_vehicle_description)/launch/ackermann_vehicle.launch">
     <arg name="namespace" value="$(arg namespace)"/>
