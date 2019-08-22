@@ -21,55 +21,56 @@
       </camera>
     </gui>
 
-		<model name="stop_sign">
+
+    <model name="stop_sign_2">
       <include>
         <uri>model://stop_sign</uri>
-        <pose>5.000000 4.000000 0.000000 0.000000 0.000000 0.000000</pose>
+        <pose>23.3044 17.6598 0.000000 0.000000 0.000000 0.000000</pose>
       </include>
     </model>
-		<model name="lamp_post">
+    <model name="stop_sign_3">
       <include>
-        <uri>model://lamp_post</uri>
-        <pose>6.000000 8.000000 0.000000 0.000000 0.000000 0.000000</pose>
+        <uri>model://stop_sign</uri>
+        <pose>12.9239 22.8272 0.000000 0.000000 0.000000 4.800000</pose>
       </include>
     </model>
-		<model name="fire_hydrant">
+    <model name="stop_sign_4">
       <include>
-        <uri>model://fire_hydrant</uri>
-        <pose>-1.000000 5.000000 0.000000 0.000000 0.000000 0.000000</pose>
+        <uri>model://stop_sign</uri>
+        <pose>-8.16711 32.5439 0.000000 0.000000 0.000000 1.600000</pose>
       </include>
     </model>
-		<model name="brick_box_3x1x3">
+    <model name="stop_sign_5">
       <include>
-        <uri>model://brick_box_3x1x3</uri>
-        <pose>0.000000 -7.000000 0.000000 0.000000 0.000000 0.000000</pose>
+        <uri>model://stop_sign</uri>
+        <pose>-11.7498 17.7838 0.000000 0.000000 0.000000 0.000000</pose>
       </include>
     </model>
-		<model name="ladder_60deg_0rails">
+    
+    <model name="barrel_1">
       <include>
-        <uri>model://ladder_60deg_0rails</uri>
-        <pose>3.500000 -7.000000 0.000000 0.000000 0.000000 1.500000</pose>
+        <uri>model://construction_barrel</uri>
+        <pose>33.6604 25.3133 0.000000 0.000000 0.000000 0.000000</pose>
       </include>
     </model>
+    <model name="barrel_2">
+      <include>
+        <uri>model://construction_barrel</uri>
+        <pose>-16.924 9.65312 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+    <model name="barrel_3">
+      <include>
+        <uri>model://construction_barrel</uri>
+        <pose>-13.6962 -11.9572 0.000000 0.000000 0.000000 0.000000</pose>
+      </include>
+    </model>
+    
+    
 
-    <model name="wall1">
-      <include>
-        <uri>model://drc_practice_white_jersey_barrier</uri>
-        <pose>9.000000 9.000000 0.000000 0.000000 0.000000 0.000000</pose>
-      </include>
-    </model>
-    <model name="wall2">
-      <include>
-        <uri>model://drc_practice_white_jersey_barrier</uri>
-        <pose>9.000000 7.000000 0.000000 0.000000 0.000000 0.000000</pose>
-      </include>
-    </model>
-    <model name="wall3">
-      <include>
-        <uri>model://drc_practice_white_jersey_barrier</uri>
-        <pose>9.000000 5.000000 0.000000 0.000000 0.000000 0.000000</pose>
-      </include>
-    </model>
+
+
+
 
 
   </world>

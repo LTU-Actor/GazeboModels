@@ -131,8 +131,8 @@ limitations under the License.
   <!-- These constants are used to simulate a Traxxas 2056 servo operated at
        6 V. servo_stall_torque is measured in N m. servo_no_load_speed is
        measured in rad/s. -->
-  <xacro:property name="servo_stall_torque" value="100"/><!--0.5649-->
-  <xacro:property name="servo_no_load_speed" value="20"/><!--4.553-->
+  <xacro:property name="servo_stall_torque" value="150"/><!-- Effort 0.5649-->
+  <xacro:property name="servo_no_load_speed" value="1"/><!--velocity 4.553-->
 
 	<xacro:property name="cameraSize" value=".05"/>
 	
@@ -442,7 +442,7 @@ limitations under the License.
 	<!-- to the z in xyz. For example, to simulate a camera mounted on a 1/2 meter post, -->
 	<!-- we can replace the z value with ${wheelRadius+chassisHeight+0.5}   							--> 
   <joint name="camera_joint" type="fixed">
-    <origin xyz="${chassis_length/2} 0 ${(tire_dia/2)+chassis_height+.5}" rpy="0 .6 0"/>
+    <origin xyz="${(chassis_length/2)-1} 0 ${(tire_dia/2)+chassis_height+1.5}" rpy="0 .9 0"/> <!-- 0 .6 0 -->
     <parent link="chassis"/>
     <child link="camera"/>
   </joint>
